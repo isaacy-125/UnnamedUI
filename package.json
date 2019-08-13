@@ -1,0 +1,22 @@
+{
+  "name": "unnamedui",
+  "version": "0.0.1",
+  "description": "A UnnamedUI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacloveadan/UnnamedUI.git"
+  },
+  "keywords": [
+    "UI"
+  ],
+  "author": "isaacloveadan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaacloveadan/UnnamedUI/issues"
+  },
+  "homepage": "https://github.com/isaacloveadan/UnnamedUI#readme"
+}
