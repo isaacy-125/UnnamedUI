@@ -23,7 +23,20 @@ module.exports = {
             { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
 
             // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
+            {
+                test: /\.(js|vue|ts|tsx|jsx)$/,
+                enforce: 'pre',
+                exclude: /node_modules/,
+                loader: 'eslint-loader',
+                options: {
+                    fix: false,
+                    extensions: ['.js', '.jsx', '.vue', '.ts', '.tsx'],
+                    cache: false,
+                    emitWarning: true,
+                    emitError: false
+                }
+            }
         ]
     },
     plugins: [

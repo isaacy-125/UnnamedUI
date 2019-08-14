@@ -1,9 +1,11 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
-import { Hello } from "./components/Hello";
+// import { Hello } from "./components/Hello";
+import Layout from './Layout';
 
 ReactDOM.render(
-    <Hello compiler="TypeScript" framework="React" />,
-    document.getElementById("example")
+    <Layout />,
+    // <Hello compiler="TypeScript" framework="React" />,
+    document.getElementById('example')
 );
