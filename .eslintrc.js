@@ -24,6 +24,7 @@ module.exports = {
         }
     },
     rules: {
+        "@typescript-eslint/no-explicit-any": "off",
         "quotes": [2, "single"], //单引号
         "no-console": 0, //不禁用console
         "no-debugger": 2, //禁用debugger

@@ -5,7 +5,8 @@ const Layout: React.FC = () => {
     return (
         <>
             <h1>Button</h1>
-            <UnButton>button</UnButton>
+            <UnButton>普通按钮</UnButton>
+            <UnButton disabled>禁用按钮</UnButton>
         </>
     );
 };
