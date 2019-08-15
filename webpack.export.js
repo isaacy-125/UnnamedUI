@@ -2,10 +2,12 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: "./src/exports.tsx",
+    entry: {
+      UnButton: "./src/components/UnButton/index.tsx",
+    },
     output: {
-        filename: "bundle.js",
-        path: __dirname + "/dist"
+        filename: "[name].js",
+        path: __dirname + "/lib/components"
     },
 
     // Enable sourcemaps for debugging webpack's output.
