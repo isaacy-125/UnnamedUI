@@ -3,6 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
+      index: './src/exports.tsx',
       UnButton: "./src/components/UnButton/index.tsx",
     },
     output: {
