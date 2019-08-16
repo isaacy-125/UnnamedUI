@@ -1,5 +1,1 @@
-import { UnButton } from './components/UnButton';
-
-export default {
-    UnButton
-}
+export { default as UnButton } from './components/UnButton';

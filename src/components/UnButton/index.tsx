@@ -31,10 +31,12 @@ const StyledButton = styled.button`
     ${(props: UnButtonProps) => props.disabled ? disabledMixin : normalMixin}
 `;
 
-export const UnButton: (React.FC & any) = (props: UnButtonProps) => {
+const UnButton: (React.FC & any) = (props: UnButtonProps) => {
     return (
         <StyledButton {...props}>
             {props.children}
         </StyledButton>
     )
 };
+
+export default UnButton;

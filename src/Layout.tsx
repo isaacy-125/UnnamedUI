@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { UnButton } from './components/UnButton';
+import UnButton from './components/UnButton';
 
 const Layout: React.FC = () => {
     return (
