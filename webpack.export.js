@@ -7,6 +7,7 @@ module.exports = {
       UnButton: "./src/components/UnButton/index.tsx",
     },
     output: {
+        libraryTarget: 'umd',
         filename: "[name].js",
         path: __dirname + "/lib/components"
     },

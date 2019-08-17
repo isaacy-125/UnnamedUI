@@ -1,6 +1,6 @@
 {
   "name": "unnamedui",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A UnnamedUI",
   "main": "lib/components/index.js",
   "scripts": {
