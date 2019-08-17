@@ -6,6 +6,7 @@ const Layout: React.FC = () => {
     const UnButtonCode = `
         <UnButton>普通按钮</UnButton>
         <UnButton disabled>禁用按钮</UnButton>
+        <UnButton onClick={() => console.log('here')}>点击按钮</UnButton>
     `;
     return (
         <>
@@ -15,6 +16,7 @@ const Layout: React.FC = () => {
             >
                 <UnButton>普通按钮</UnButton>
                 <UnButton disabled>禁用按钮</UnButton>
+                <UnButton onClick={() => console.log('here')}>点击按钮</UnButton>
             </UnCodeCard>
         </>
     );
