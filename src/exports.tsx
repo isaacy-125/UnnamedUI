@@ -1,1 +1,2 @@
-export { default as UnButton } from './components/UnButton';
+import UnButton from './components/UnButton';
+export { UnButton };
