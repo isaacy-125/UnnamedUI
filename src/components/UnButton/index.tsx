@@ -28,7 +28,7 @@ const StyledButton = styled.button`
     border-radius: 5px;
     color: white;
     background-color: #70C1B3;
-    ${(props: UnButtonProps) => props.disabled ? disabledMixin : normalMixin}
+    ${(props: UnButtonProps): any => props.disabled ? disabledMixin : normalMixin}
 `;
 
 const UnButton: (React.FC & any) = (props: UnButtonProps) => {
