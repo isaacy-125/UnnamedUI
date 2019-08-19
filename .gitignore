@@ -12,6 +12,7 @@ npm-debug.log
 yarn-error.log
 
 src/exports.tsx
+exportEntry.json
 
 lib/components
 

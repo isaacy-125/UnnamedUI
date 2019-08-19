@@ -33,6 +33,23 @@ done
 # done
 echo "}" >> exports.tsx
 
+cd ..
+rm -fr exportEntry.json
+touch exportEntry.json
+echo "{" >> exportEntry.json
+echo '"index": "./src/exports.tsx",' >> exportEntry.json
+
+for i in `seq 0 $((${#val[*]}-1))`
+do
+    if [[ ${i} == $((${#val[*]}-1)) ]]; then
+        echo '"'${val[${i}]}'": "./src/components/'${val[${i}]}'/index"' >> exportEntry.json
+    else
+        echo '"'${val[${i}]}'": "./src/components/'${val[${i}]}'/index",' >> exportEntry.json
+    fi
+done
+echo "}" >> exportEntry.json
+
+
 # for i in `ls`
 # do
 #     echo $i

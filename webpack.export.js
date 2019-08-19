@@ -1,11 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
+const entry = require('./exportEntry.json');
+
+console.log(entry);
 
 module.exports = {
-    entry: {
-      index: './src/exports.tsx',
-      UnButton: "./src/components/UnButton/index.tsx",
-    },
+    entry: entry,
     output: {
         libraryTarget: 'umd',
         filename: "[name].js",
