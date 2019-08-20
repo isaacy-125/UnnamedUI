@@ -49,7 +49,10 @@ const Layout: React.FC = () => {
                     <UnInput placeholder={'请输入内容'}></UnInput>
                 </StyledMarginDiv>
                 <StyledMarginDiv>
-                    <UnInput disabled placeholder={'禁用input'}></UnInput>
+                    <UnInput
+                        disabled
+                        placeholder={'禁用input'}
+                    ></UnInput>
                 </StyledMarginDiv>
             </UnCodeCard>
         </>
